@@ -1,1 +1,5 @@
 # monet-gan
+
+This week's challenge problem is the Kaggle competition "[I'm Something of a Painter Myself](https://www.kaggle.com/competitions/gan-getting-started)," which involves building and training a generative adversarial network to add a "Monet style" to photos. Generative adversarial networks, or GANs, are a good fit for this task because they can be trained to mimic a style as a feature of the "adversarial" nature of the models. GANs consist of (at least) two neural networks, one that creates content (in this case, images), called a generator, and one that attempts to sort real from generated content, called a discriminator. Each network is trying to "outsmart" the other, and in this way they both get stronger.
+
+The dataset we'll be using consists of four directories: `monet_tfrec`, `photo_tfrec`, `monet_jpg`, and `photo_jpg`. The `monet` directories contain 300 images of Monet paintings, sized 256x256, for the discriminator to train on (in two different file types — we'll use the tfrec files), and the `photo` directories contain 7028 photos, also sized 256x256, for the model to transform into a Monet style.
